@@ -28,6 +28,14 @@ anova_brms <- brm(
 )
 
 anova_brms
+#=======================================\
+#opulation-Level Effects: 
+#           Estimate Est.Error  l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+#Intercept -14668.64  12661.98 -38546.59  4578.18 1.83        6       22
+#cloudy     14731.90  12662.39  -4514.24 38611.71 1.83        6       22
+#rainy      14731.62  12662.34  -4515.40 38609.76 1.83        6       22
+#sunny      14752.01  12662.38  -4493.90 38634.10 1.83        6       22
+
 
 # 推定された天気別の平均売り上げのグラフ
 eff <- marginal_effects(anova_brms)
